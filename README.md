@@ -69,12 +69,17 @@ const kamronbek = {
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=KAMRONBEK&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KAMRONBEK&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=KAMRONBEK&theme=tokyonight" alt="GitHub Stats" />
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=KAMRONBEK&theme=tokyonight" alt="Top Languages by Repo" />
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=KAMRONBEK&theme=tokyonight" alt="Top Languages by Commit" />
 </div>
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=KAMRONBEK&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KAMRONBEK&theme=tokyonight" alt="Contribution Graph" />
 </div>
 
 ---
@@ -82,7 +87,7 @@ const kamronbek = {
 ## 🏆 Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=KAMRONBEK&theme=tokyonight&no-frame=true&no-bg=true&column=7" alt="Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=KAMRONBEK&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=15" alt="Trophies" />
 </div>
 
 ---
@@ -90,18 +95,44 @@ const kamronbek = {
 ## 🚀 Featured Projects
 
 <div align="center">
-  <a href="https://github.com/KAMRONBEK/softwhere.uz">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=KAMRONBEK&repo=softwhere.uz&theme=tokyonight&hide_border=true" alt="softwhere.uz" />
-  </a>
-  <a href="https://github.com/KAMRONBEK/fitness-app">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=KAMRONBEK&repo=fitness-app&theme=tokyonight&hide_border=true" alt="fitness-app" />
-  </a>
-  <a href="https://github.com/KAMRONBEK/Agro">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=KAMRONBEK&repo=Agro&theme=tokyonight&hide_border=true" alt="Agro" />
-  </a>
-  <a href="https://github.com/KAMRONBEK/myid-react-native">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=KAMRONBEK&repo=myid-react-native&theme=tokyonight&hide_border=true" alt="myid-react-native" />
-  </a>
+<table>
+<tr>
+<td width="50%">
+
+### [softwhere.uz](https://github.com/KAMRONBEK/softwhere.uz)
+Multilingual blog platform & portfolio with AI-powered content generation. Built with **Next.js 14**, **TypeScript**, **MongoDB**, **Tailwind CSS**.
+
+![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
+</td>
+<td width="50%">
+
+### [fitness-app](https://github.com/KAMRONBEK/fitness-app)
+Premium dark-themed fitness app with monthly workout videos & mock subscription. Built with **Expo SDK 54**, **TypeScript**, **expo-video**.
+
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### [Agro](https://github.com/KAMRONBEK/Agro)
+Agriculture management app for the farming sector. Built with **TypeScript**.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+</td>
+<td width="50%">
+
+### [myid-react-native](https://github.com/KAMRONBEK/myid-react-native)
+MyID integration module for React Native apps. **Kotlin** native bridge.
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+
+</td>
+</tr>
+</table>
 </div>
 
 ---
@@ -114,14 +145,6 @@ const kamronbek = {
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake.svg" />
     <img alt="Snake animation" src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
   </picture>
-</div>
-
----
-
-## 📈 Activity Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KAMRONBEK&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" />
 </div>
 
 ---
