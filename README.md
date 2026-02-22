@@ -87,7 +87,7 @@ const kamronbek = {
 ## 🏆 Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=KAMRONBEK&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=15" alt="Trophies" />
+  <img src="https://github-trophies.vercel.app/?username=KAMRONBEK&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=15" alt="Trophies" />
 </div>
 
 ---
@@ -143,8 +143,11 @@ MyID integration module for React Native apps. **Kotlin** native bridge.
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake.svg" />
-    <img alt="Snake animation" src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
   </picture>
+
+  > Run the **Generate Snake Animation** workflow from [Actions](https://github.com/KAMRONBEK/KAMRONBEK/actions) to activate this animation
+
 </div>
 
 ---
