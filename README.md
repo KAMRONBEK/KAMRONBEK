@@ -141,6 +141,12 @@ Tele-health platform with multi-role flows (Doctor/Patient), scheduling with con
 
 </td>
 <td width="50%">
+
+### [kamuran.dev](https://github.com/KAMRONBEK/kamuran.dev)
+Personal developer portfolio website. Built with **Next.js**, **TypeScript**, **Tailwind CSS**.
+
+![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
 </td>
 </tr>
 </table>
