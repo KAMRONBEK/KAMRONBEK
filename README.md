@@ -117,10 +117,10 @@ Premium dark-themed fitness app with monthly workout videos & mock subscription.
 <tr>
 <td width="50%">
 
-### [Agro](https://github.com/KAMRONBEK/Agro)
-Agriculture management app for the farming sector. Built with **TypeScript**.
+### [asia-insurance](https://github.com/KAMRONBEK/asia-insurance)
+Insurance mobile app with native iOS & Android builds. Built with **React Native**, **TypeScript**.
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
 </td>
 <td width="50%">
@@ -130,6 +130,18 @@ MyID integration module for React Native apps. **Kotlin** native bridge.
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### [tele-health](https://github.com/KAMRONBEK/-tele-health-mobile-task)
+Tele-health platform with multi-role flows (Doctor/Patient), scheduling with conflict resolution, and offline support. Built with **Expo**, **Jotai**, **TypeScript**.
+
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+
+</td>
+<td width="50%">
 </td>
 </tr>
 </table>
