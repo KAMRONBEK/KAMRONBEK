@@ -18,7 +18,7 @@
 const kamronbek = {
     location: "Tashkent, Uzbekistan 🇺🇿",
     experience: "6+ years",
-    focus: ["React Native", "Expo", "Next.js", "TypeScript"],
+    focus: ["React Native", "Expo", "React", "Next.js", "Node.js", "TypeScript"],
     website: "https://kamran.dev",
     funFact: "I mass-produce mobile apps like a factory line 🏭",
 };
