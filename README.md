@@ -17,7 +17,6 @@
 ```typescript
 const kamronbek = {
     location: "Tashkent, Uzbekistan 🇺🇿",
-    company: "Softwhere",
     experience: "6+ years",
     focus: ["React Native", "Expo", "Next.js", "TypeScript"],
     website: "https://kamran.dev",
