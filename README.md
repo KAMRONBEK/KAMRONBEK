@@ -19,7 +19,7 @@ const kamronbek = {
     location: "Tashkent, Uzbekistan 🇺🇿",
     experience: "6+ years",
     focus: ["React Native", "Expo", "React", "Next.js", "Node.js", "TypeScript"],
-    website: "https://kamran.dev",
+    website: "https://kamuran.dev",
     funFact: "I mass-produce mobile apps like a factory line 🏭",
 };
 ```
@@ -165,7 +165,7 @@ Tele-health platform with multi-role flows (Doctor/Patient), scheduling with con
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kamron-jurayev)
-[![kamran.dev](https://img.shields.io/badge/kamran.dev-3B82F6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kamran.dev)
+[![kamuran.dev](https://img.shields.io/badge/kamuran.dev-3B82F6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kamuran.dev)
 [![Website](https://img.shields.io/badge/softwhere.uz-000000?style=for-the-badge&logo=safari&logoColor=white)](https://softwhere.uz)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KAMRONBEK)
 
