@@ -137,10 +137,7 @@ MyID integration module for React Native apps. **Kotlin** native bridge.
 
 ---
 
-<!--
 ## 🐍 Contribution Snake
-To activate: go to Actions tab > "Generate Snake Animation" > "Run workflow"
-Then uncomment this section.
 
 <div align="center">
   <picture>
@@ -149,8 +146,8 @@ Then uncomment this section.
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
   </picture>
 </div>
+
 ---
--->
 
 ## 🤝 Connect With Me
 
