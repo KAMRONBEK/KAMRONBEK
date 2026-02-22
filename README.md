@@ -20,7 +20,7 @@ const kamronbek = {
     company: "Softwhere",
     experience: "6+ years",
     focus: ["React Native", "Expo", "Next.js", "TypeScript"],
-    website: "https://softwhere.uz",
+    website: "https://kamran.dev",
     funFact: "I mass-produce mobile apps like a factory line 🏭",
 };
 ```
@@ -154,6 +154,7 @@ MyID integration module for React Native apps. **Kotlin** native bridge.
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kamron-jurayev)
+[![kamran.dev](https://img.shields.io/badge/kamran.dev-3B82F6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kamran.dev)
 [![Website](https://img.shields.io/badge/softwhere.uz-000000?style=for-the-badge&logo=safari&logoColor=white)](https://softwhere.uz)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KAMRONBEK)
 
