@@ -1,189 +1,78 @@
-<div align="center">
+<img src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/main/assets/hero.svg" alt="Kamronbek Juraev — React Native / Expo engineer, Tashkent" width="100%">
 
-<!-- Animated Header -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=100&lines=Hey+%F0%9F%91%8B+I'm+Kamronbek+Juraev;Mobile+%2F+Frontend+Developer;6%2B+Years+of+Building+Apps+People+Love" alt="Typing SVG" />
+**React Native / Expo engineer, 6+ years.** I build and ship production mobile apps end-to-end — architecture through store release.
 
-<br/>
-
-[![Profile Views](https://komarev.com/ghpvc/?username=KAMRONBEK&style=for-the-badge&color=3b82f6)](https://github.com/KAMRONBEK)
-[![GitHub followers](https://img.shields.io/github/followers/KAMRONBEK?style=for-the-badge&color=3b82f6)](https://github.com/KAMRONBEK?tab=followers)
-
-</div>
+Mobile engineer at **Lincoln Labs, Inc.** · Tashkent, UTC+5 — a full working day of overlap with Europe, mornings with US East.
 
 ---
 
-## 🧑‍💻 About Me
+## Shipped
 
-```typescript
-const kamronbek = {
-    location: "Tashkent, Uzbekistan 🇺🇿",
-    experience: "6+ years",
-    focus: ["React Native", "Expo", "React", "Next.js", "Node.js", "TypeScript"],
-    website: "https://kamuran.dev",
-    funFact: "I mass-produce mobile apps like a factory line 🏭",
-};
-```
+Production apps I built as part of the engineering team at Lincoln Labs and previous employers. Store listings are published under each client's developer account.
 
-- 🔭 Building **[softwhere.uz](https://softwhere.uz)** — a multilingual blog platform & portfolio with AI-powered content
-- 📱 Crafting pixel-perfect mobile apps with **React Native & Expo**
-- 🚀 Shipped apps for insurance, agriculture, health, fitness & more
-- 🌱 Currently exploring **Svelte** and **AI integrations**
-- 💬 Ask me about **React Native, Expo, TypeScript, Next.js**
+| App | What it does | Stack | Store |
+|---|---|---|---|
+| **Netevia** | Online banking — accounts, transactions, financial services | React Native · TypeScript · REST | [iOS](https://apps.apple.com/us/app/netevia/id1625351334) · [Android](https://play.google.com/store/apps/details?id=com.neteviacard.card) |
+| **WorkAxle** | Enterprise workforce management — live scheduling and team comms at scale | React Native · GraphQL · Redux Saga | [iOS](https://apps.apple.com/us/app/workaxle/id1313407282) · [Android](https://play.google.com/store/apps/details?id=com.workaxle.employee) · [Web](https://www.workaxle.com/) |
+| **Swish · VBrato** | Sports & social apps — real-time chat, in-app purchases, rich media | React Native · GraphQL · Sendbird | [iOS](https://apps.apple.com/us/app/swish-sports/id1551295361) · [Android](https://play.google.com/store/apps/details?id=co.lincolnlabs.swish) |
+| **Truck Me** | Truck-services finder — nearby repairs, maintenance and funding | React Native · Google Maps · TypeScript | [iOS](https://apps.apple.com/us/app/truck-me/id6754442584) · [Android](https://play.google.com/store/apps/details?id=com.truckme) |
+| **EDOCS.UZ** | Legally-significant e-document management — invoices, delivery notes, acts | React Native · Redux Saga | [iOS](https://apps.apple.com/kz/app/edocs-uz/id6754750404) · [Android](https://play.google.com/store/apps/details?id=com.odiljondevfront.edocsmobile) |
+| **DriveMe** | Premium chauffeur service — booking, live tracking, service tiers | React Native · Google Maps · Redux | [iOS](https://apps.apple.com/uz/app/driveme-elite/id6757360912) · [Android](https://play.google.com/store/apps/details?id=com.poizn.DriveMe) |
 
----
+<details>
+<summary><b>More shipped apps</b></summary>
 
-## 🛠️ Tech Stack
+<br>
 
-<div align="center">
+| App | What it does | Stack | Store |
+|---|---|---|---|
+| **ASCON** | Insurance — express damages payment processing | React Native · Google Maps · Redux | [iOS](https://apps.apple.com/uz/app/ascon/id1613704743) · [Android](https://play.google.com/store/apps/details?id=uz.sos.ascon) |
+| **BDM** | Digital document signing with legal force | React Native · Redux Saga · Formik | [iOS](https://apps.apple.com/uz/app/bdm/id1506887882) |
+| **HeyAll** | Event planning — connects hosts with suppliers | React Native · React · Redux | [iOS](https://apps.apple.com/us/app/heyall/id1590498767) |
+| **DriveMe Driver** | Driver-side app — requests, routes, trip management | React Native · Google Maps · Redux | [iOS](https://apps.apple.com/uz/app/driveme-driver/id6757392657) · [Android](https://play.google.com/store/apps/details?id=uz.driveme.driver) |
 
-#### Mobile
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+Plus work across fintech, logistics and retail that isn't publicly listed.
 
-#### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-#### Languages
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-
-#### Backend & Database
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
-
-#### Tools
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
-</div>
+</details>
 
 ---
 
-## 📊 GitHub Stats
+## Open source
 
-<div align="center">
-  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=KAMRONBEK&theme=tokyonight" alt="GitHub Stats" />
-  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=KAMRONBEK&theme=tokyonight" alt="Top Languages by Repo" />
-  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=KAMRONBEK&theme=tokyonight" alt="Top Languages by Commit" />
-</div>
+| Project | What it is | Stack |
+|---|---|---|
+| **[talim-ai](https://github.com/KAMRONBEK/talim-ai)** · [live](https://talim-ai.uz) | AI learning platform — turns PDFs and YouTube videos into summaries, quizzes and a RAG tutor | Next.js 15 · Express + Prisma · Postgres + pgvector |
+| **[softwhere.uz](https://github.com/KAMRONBEK/softwhere.uz)** · [live](https://softwhere.uz) | Trilingual (uz/ru/en) blog platform and studio site with AI-generated content | Next.js 16 · TypeScript · Neon Postgres + Drizzle |
+| **[my-barber](https://github.com/KAMRONBEK/my-barber)** | Barbershop booking SaaS — Expo app, marketing site and API in one Turborepo | Turborepo · Expo · Express + Firestore |
+| **[kamuran.dev](https://github.com/KAMRONBEK/kamuran.dev)** · [live](https://kamuran.dev) | This portfolio, built to load fast and stay out of its own way | Next.js 16 · React 19 · Tailwind v4 |
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=KAMRONBEK&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</div>
+<details>
+<summary><b>Take-home projects</b> — built as evaluation assignments, labeled as such</summary>
 
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KAMRONBEK&theme=tokyonight" alt="Contribution Graph" />
-</div>
+<br>
 
----
+**[tele-health](https://github.com/KAMRONBEK/-tele-health-mobile-task)** — Doctor/patient tele-health app on an atomic-design architecture. Exact-slot collision detection with auto-reschedule, local state persistence via AsyncStorage, simulated offline and error handling.
+`Expo · Jotai · TypeScript`
 
-## 🏆 Trophies
+**[Mecenate](https://github.com/KAMRONBEK/Mecenate)** — Post feed with likes, comments and WebSocket updates. Built in roughly two hours; its backing API is no longer hosted.
+`Expo Router · TanStack Query · MobX`
 
-<div align="center">
-  <img src="https://github-trophies.vercel.app/?username=KAMRONBEK&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=15" alt="Trophies" />
-</div>
+</details>
 
 ---
 
-## 🚀 Featured Projects
+Also comfortable with **React / Next.js** on the web and **Node / Express + Postgres** on the API side when a project needs it.
 
-<div align="center">
-<table>
-<tr>
-<td width="50%">
-
-### [softwhere.uz](https://github.com/KAMRONBEK/softwhere.uz)
-Multilingual blog platform & portfolio with AI-powered content generation. Built with **Next.js 14**, **TypeScript**, **MongoDB**, **Tailwind CSS**.
-
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-</td>
-<td width="50%">
-
-### [fitness-app](https://github.com/KAMRONBEK/fitness-app)
-Premium dark-themed fitness app with monthly workout videos & mock subscription. Built with **Expo SDK 54**, **TypeScript**, **expo-video**.
-
-![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### [asia-insurance](https://github.com/KAMRONBEK/asia-insurance)
-Insurance mobile app with native iOS & Android builds. Built with **React Native**, **TypeScript**.
-
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-
-</td>
-<td width="50%">
-
-### [myid-react-native](https://github.com/KAMRONBEK/myid-react-native)
-MyID integration module for React Native apps. **Kotlin** native bridge.
-
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### [tele-health](https://github.com/KAMRONBEK/-tele-health-mobile-task)
-Tele-health platform with multi-role flows (Doctor/Patient), scheduling with conflict resolution, and offline support. Built with **Expo**, **Jotai**, **TypeScript**.
-
-![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-
-</td>
-<td width="50%">
-
-### [kamuran.dev](https://github.com/KAMRONBEK/kamuran.dev)
-Personal developer portfolio website. Built with **Next.js**, **TypeScript**, **Tailwind CSS**.
-
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-</td>
-</tr>
-</table>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake.svg" />
+  <img alt="Contribution graph snake animation" src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
+</picture>
 
 ---
 
-## 🐍 Contribution Snake
+### Available for new work
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake.svg" />
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
-  </picture>
-</div>
+Open to remote roles and contract engagements — best fit is a team shipping consumer or enterprise mobile apps that needs someone to own the mobile side end-to-end.
 
----
-
-## 🤝 Connect With Me
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kamron-jurayev)
-[![kamuran.dev](https://img.shields.io/badge/kamuran.dev-3B82F6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kamuran.dev)
-[![Website](https://img.shields.io/badge/softwhere.uz-000000?style=for-the-badge&logo=safari&logoColor=white)](https://softwhere.uz)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KAMRONBEK)
-
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
-</div>
-
-<div align="center">
-  <i>If you like my work, consider giving a ⭐ to my repos!</i>
-</div>
+[kamuran.dev](https://kamuran.dev) · [LinkedIn](https://linkedin.com/in/kamronbek-juraev) · [kamuranbek1998@gmail.com](mailto:kamuranbek1998@gmail.com)
