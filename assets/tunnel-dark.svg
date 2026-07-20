@@ -69,5 +69,5 @@
   <g class="row d2680"><text x="316" y="466" class="body mu" text-anchor="end">8.2s</text><g transform="translate(336 461)"><path d="M -5.5 0.5 L -2 4 L 5.5 -4" stroke="#ff8f3a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="466" class="body" fill="#ff8f3a" font-weight="600">0 lost · 0 duplicates · in order</text></g>
 
   <text x="28" y="498" class="foot mu">200/200 fault runs green · 914 messages, 0 lost, 0 duplicated</text>
-  <text x="28" y="518" class="foot mu">rendered by tools/render-tunnel.mjs · seed 4 · local</text>
+  <text x="28" y="518" class="foot mu">rendered by tools/render-tunnel.mjs · seed 4 · b6cd4b2</text>
 </svg>
