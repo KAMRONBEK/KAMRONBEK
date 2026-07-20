@@ -31,7 +31,7 @@ const REPO = join(HERE, "..");
 const W = 720;
 const H = 540;
 
-// Straight from assets/hero.svg, so the profile reads as one identity.
+// Shared with tools/render-showcase.mjs, so the profile reads as one identity.
 const THEMES = {
   dark: {
     bg: "#070a12",
