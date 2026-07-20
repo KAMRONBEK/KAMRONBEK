@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="720" height="540" role="img" aria-label="An offline-first message queue losing its connection mid-send, backing off, then reconnecting and flushing 2 queued messages in order. 3 sent, 3 delivered, 0 lost, 0 duplicated. 200/200 fault runs green · 914 messages, 0 lost, 0 duplicated.">
+  <title>tunnel — what my message queue does when the network dies</title>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace; }
+    .fg { fill: #1f2328; }
+    .mu { fill: #59636e; }
+    .ac { fill: #b8500f; }
+    .h1 { font-size: 18px; font-weight: 600; }
+    .body { font-size: 15px; }
+    .foot { font-size: 13px; }
+
+    /* The finished frame is the default. Animation only withholds things on the
+       way in, so a non-animating renderer shows the complete, settled result. */
+    .row { animation: rowIn .34s cubic-bezier(.22,.61,.36,1) backwards; }
+    @keyframes rowIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .tick { animation: fadeIn .2s linear backwards; }
+    @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+    .qmark { opacity: 0; animation: fadeOut .2s linear backwards; }
+    @keyframes fadeOut { from { opacity: 1 } to { opacity: 0 } }
+
+    .d180 { animation-delay: 180ms; }
+    .d241 { animation-delay: 241ms; }
+    .d277 { animation-delay: 277ms; }
+    .d441 { animation-delay: 441ms; }
+    .d453 { animation-delay: 453ms; }
+    .d459 { animation-delay: 459ms; }
+    .d635 { animation-delay: 635ms; }
+    .d667 { animation-delay: 667ms; }
+    .d1236 { animation-delay: 1236ms; }
+    .d2164 { animation-delay: 2164ms; }
+    .d2607 { animation-delay: 2607ms; }
+    .d2644 { animation-delay: 2644ms; }
+    .d2680 { animation-delay: 2680ms; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .row, .tick, .qmark { animation: none; }
+      .qmark { opacity: 0; }
+    }
+  </style>
+
+  <rect width="720" height="540" rx="14" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="719" height="539" rx="14" fill="none" stroke="#d1d9e0"/>
+
+  <text x="28" y="44" class="h1 ac">tunnel</text>
+  <text x="102" y="44" class="h1 fg">what my message queue does when the network dies</text>
+  <text x="28" y="68" class="body mu">an offline-first outbox, run against an adversarial network</text>
+
+  <rect x="28" y="84" width="198" height="250" rx="24" fill="#f3f4f6" stroke="#d1d9e0" stroke-width="1.5"/><rect x="38" y="96" width="178" height="226" rx="16" fill="#ffffff" stroke="#d1d9e0"/><g class="row d241"><rect x="113" y="114" width="97" height="40" rx="12" fill="#f3f4f6" stroke="#d1d9e0"/><text x="127" y="139" class="body fg">"hey"</text><g class="qmark d277"><g transform="translate(190 134)"><circle r="4" fill="none" stroke="#59636e" stroke-width="2"/></g></g><g class="tick d277"><g transform="translate(186 134)"><path d="M -6 0.5 L -3 3.5 L 2 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M 1 0.5 L 4 3.5 L 9 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g></g><g class="row d441"><rect x="61.400000000000006" y="176" width="148.6" height="40" rx="12" fill="#f3f4f6" stroke="#d1d9e0"/><text x="75.4" y="201" class="body fg">"on my way"</text><g class="qmark d2644"><g transform="translate(190 196)"><circle r="4" fill="none" stroke="#59636e" stroke-width="2"/></g></g><g class="tick d2644"><g transform="translate(186 196)"><path d="M -6 0.5 L -3 3.5 L 2 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M 1 0.5 L 4 3.5 L 9 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g></g><g class="row d635"><rect x="61.400000000000006" y="238" width="148.6" height="40" rx="12" fill="#f3f4f6" stroke="#d1d9e0"/><text x="75.4" y="263" class="body fg">"2 min out"</text><g class="qmark d2680"><g transform="translate(190 258)"><circle r="4" fill="none" stroke="#59636e" stroke-width="2"/></g></g><g class="tick d2680"><g transform="translate(186 258)"><path d="M -6 0.5 L -3 3.5 L 2 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M 1 0.5 L 4 3.5 L 9 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g></g><g class="row d180"><g transform="translate(40 365)"><circle r="4" fill="none" stroke="#59636e" stroke-width="2"/></g><text x="64" y="370" class="foot mu">queued on the phone</text><g transform="translate(44 392)"><path d="M -6 0.5 L -3 3.5 L 2 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M 1 0.5 L 4 3.5 L 9 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="64" y="397" class="foot mu">confirmed by the server</text></g>
+  <g class="row d180"><text x="316" y="92" class="body mu" text-anchor="end">0.0s</text><g transform="translate(336 87)"><circle r="4.5" fill="#b8500f"/></g><text x="356" y="92" class="body" fill="#1f2328">connected</text></g>
+  <g class="row d241"><text x="316" y="114" class="body mu" text-anchor="end">0.2s</text><g transform="translate(336 109)"><path d="M -5 0 L 4 0 M 0.5 -3.5 L 4 0 L 0.5 3.5" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="114" class="body" fill="#1f2328">send "hey"</text></g>
+  <g class="row d277"><text x="316" y="136" class="body mu" text-anchor="end">0.3s</text><g transform="translate(336 131)"><path d="M -6 0.5 L -3 3.5 L 2 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M 1 0.5 L 4 3.5 L 9 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="136" class="body" fill="#1f2328">delivered · c-1-ec72 -&gt; s-1</text></g>
+  <g class="row d441"><text x="316" y="158" class="body mu" text-anchor="end">0.9s</text><g transform="translate(336 153)"><path d="M -5 0 L 4 0 M 0.5 -3.5 L 4 0 L 0.5 3.5" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="158" class="body" fill="#1f2328">send "on my way"</text></g>
+  <g class="row d453"><text x="316" y="180" class="body mu" text-anchor="end">0.9s</text><g transform="translate(336 175)"><path d="M -4.5 -4.5 L 4.5 4.5 M 4.5 -4.5 L -4.5 4.5" stroke="#cf222e" stroke-width="2.2" stroke-linecap="round" fill="none"/></g><text x="356" y="180" class="body" fill="#cf222e" font-weight="600">CONNECTION LOST</text></g>
+  <g class="row d459"><text x="316" y="202" class="body mu" text-anchor="end">0.9s</text><g transform="translate(336 197)"><circle r="4.5" fill="none" stroke="#cf222e" stroke-width="2"/></g><text x="356" y="202" class="body" fill="#59636e">connection lost</text></g>
+  <g class="row d459"><text x="316" y="224" class="body mu" text-anchor="end">0.9s</text><g transform="translate(336 219)"><path d="M 4.5 0 A 4.5 4.5 0 1 1 0 -4.5" stroke="#59636e" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M -2.6 -4.5 L 0 -4.5 L 0 -1.9" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="224" class="body" fill="#1f2328">retry in 0.7s</text></g>
+  <g class="row d635"><text x="316" y="246" class="body mu" text-anchor="end">1.5s</text><g transform="translate(336 241)"><circle r="4" fill="none" stroke="#59636e" stroke-width="2"/></g><text x="356" y="246" class="body" fill="#1f2328">queued "2 min out"</text></g>
+  <g class="row d667"><text x="316" y="268" class="body mu" text-anchor="end">1.6s</text><g transform="translate(336 263)"><path d="M 4.5 0 A 4.5 4.5 0 1 1 0 -4.5" stroke="#59636e" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M -2.6 -4.5 L 0 -4.5 L 0 -1.9" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="268" class="body" fill="#1f2328">retry in 1.9s</text></g>
+  <g class="row d1236"><text x="316" y="290" class="body mu" text-anchor="end">3.5s</text><g transform="translate(336 285)"><path d="M 4.5 0 A 4.5 4.5 0 1 1 0 -4.5" stroke="#59636e" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M -2.6 -4.5 L 0 -4.5 L 0 -1.9" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="290" class="body" fill="#1f2328">retry in 3.1s</text></g>
+  <g class="row d2164"><text x="316" y="312" class="body mu" text-anchor="end">6.5s</text><g transform="translate(336 307)"><path d="M 4.5 0 A 4.5 4.5 0 1 1 0 -4.5" stroke="#59636e" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M -2.6 -4.5 L 0 -4.5 L 0 -1.9" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="312" class="body" fill="#1f2328">retry in 7.0s</text></g>
+  <g class="row d2607"><text x="316" y="334" class="body mu" text-anchor="end">8.0s</text><g transform="translate(336 329)"><circle r="4.5" fill="#b8500f"/></g><text x="356" y="334" class="body" fill="#1f2328">reconnected</text></g>
+  <g class="row d2607"><text x="316" y="356" class="body mu" text-anchor="end">8.0s</text><g transform="translate(336 351)"><path d="M -4.5 1.5 L 0 -3 L 4.5 1.5 M -4.5 5 L 0 0.5 L 4.5 5" stroke="#b8500f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="356" class="body" fill="#1f2328">flushing 2 queued</text></g>
+  <g class="row d2607"><text x="316" y="378" class="body mu" text-anchor="end">8.0s</text><g transform="translate(336 373)"><path d="M -5 0 L 4 0 M 0.5 -3.5 L 4 0 L 0.5 3.5" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="378" class="body" fill="#1f2328">send "on my way"</text></g>
+  <g class="row d2644"><text x="316" y="400" class="body mu" text-anchor="end">8.1s</text><g transform="translate(336 395)"><path d="M -6 0.5 L -3 3.5 L 2 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M 1 0.5 L 4 3.5 L 9 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="400" class="body" fill="#1f2328">delivered · c-2-13cf -&gt; s-2</text></g>
+  <g class="row d2644"><text x="316" y="422" class="body mu" text-anchor="end">8.1s</text><g transform="translate(336 417)"><path d="M -5 0 L 4 0 M 0.5 -3.5 L 4 0 L 0.5 3.5" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="422" class="body" fill="#1f2328">send "2 min out"</text></g>
+  <g class="row d2680"><text x="316" y="444" class="body mu" text-anchor="end">8.2s</text><g transform="translate(336 439)"><path d="M -6 0.5 L -3 3.5 L 2 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M 1 0.5 L 4 3.5 L 9 -3.5" stroke="#b8500f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="444" class="body" fill="#1f2328">delivered · c-3-bb84 -&gt; s-3</text></g>
+  <g class="row d2680"><text x="316" y="466" class="body mu" text-anchor="end">8.2s</text><g transform="translate(336 461)"><path d="M -5.5 0.5 L -2 4 L 5.5 -4" stroke="#b8500f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><text x="356" y="466" class="body" fill="#b8500f" font-weight="600">0 lost · 0 duplicates · in order</text></g>
+
+  <text x="28" y="498" class="foot mu">200/200 fault runs green · 914 messages, 0 lost, 0 duplicated</text>
+  <text x="28" y="518" class="foot mu">rendered by tools/render-tunnel.mjs · seed 4 · local</text>
+</svg>

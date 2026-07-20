@@ -63,11 +63,23 @@ Plus work across fintech, logistics and retail that isn't publicly listed.
 
 Also comfortable with **React / Next.js** on the web and **Node / Express + Postgres** on the API side when a project needs it.
 
+---
+
+## What happens when the network dies
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake.svg" />
-  <img alt="Contribution graph snake animation" src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/main/assets/tunnel-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/main/assets/tunnel-light.svg" />
+  <img alt="An offline-first message queue losing its connection mid-send, backing off, then reconnecting and flushing two queued messages in order — no loss, no duplicates" src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/main/assets/tunnel-dark.svg" width="100%" />
 </picture>
+
+Sending a message when the network is up is not the hard part. The subway tunnel is: the radio dies mid-send, the user keeps typing, and everything still has to arrive exactly once, in order.
+
+So I wrote the queue — SQLite persistence, exponential backoff, head-of-line sending, dedupe by client-minted id — and a simulator that attacks it with dropped frames, lost acks, duplicate delivery and connections that die between send and arrival. Nothing reads the wall clock or `Math.random`, so a failing seed replays exactly.
+
+Every figure in that graphic is output from the run that drew it. CI proves the invariants, re-runs the scenario, and redraws the image; if a fault run goes red, nothing renders.
+
+**[The queue and its tests](tunnel/)** · **[the mutation that proved the suite was testing the wrong thing](tunnel/README.md#the-tests-are-checked-against-mutations)** · no dependencies, Node built-ins only
 
 ---
 

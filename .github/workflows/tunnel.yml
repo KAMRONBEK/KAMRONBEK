@@ -1,0 +1,65 @@
+name: tunnel
+
+# The graphic is a build artifact of the queue, so it is only rebuilt when the
+# queue or the renderer changes. No cron: there is nothing to refresh on a
+# timer, and scheduled workflows get disabled after a couple of quiet months.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tunnel/**"
+      - "tools/render-tunnel.mjs"
+      - ".github/workflows/tunnel.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Two runs committing generated artifacts to the same branch will collide.
+concurrency:
+  group: tunnel-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # No install step: the queue, its tests and the renderer use only Node
+      # built-ins. If this ever needs an npm install, something has gone wrong.
+      - name: Prove the invariants
+        run: npm test
+
+      # scenario.ts refuses to write a trace if the demo run or the fault sweep
+      # breaks an invariant, so a red run can never quietly ship a green graphic.
+      - name: Re-run the scenario and the fault sweep
+        run: npm run trace
+
+      - name: Render the graphic
+        run: npm run render
+        env:
+          GITHUB_SHA: ${{ github.sha }}
+
+      - name: Commit the regenerated artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/tunnel-dark.svg assets/tunnel-light.svg data/trace.json
+          if git diff --staged --quiet; then
+            echo "artifacts already match the source; nothing to commit"
+            exit 0
+          fi
+          git commit -m "Regenerate tunnel graphic"
+          # Someone may have pushed to main between checkout and here.
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "push rejected, rebasing (attempt $attempt)"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          done
+          echo "could not push after 3 attempts" >&2
+          exit 1

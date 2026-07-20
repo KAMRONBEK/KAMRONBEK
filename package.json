@@ -1,0 +1,16 @@
+{
+  "name": "tunnel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An offline-first message queue, proved under deterministic fault injection. Generates the graphic on my profile.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --no-warnings --test tunnel/test/*.test.ts",
+    "trace": "node --no-warnings tunnel/scenario.ts",
+    "render": "node --no-warnings tools/render-tunnel.mjs",
+    "build": "npm run test && npm run trace && npm run render"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "scenario": "the radio dies mid-send, and everything still arrives once, in order",
+  "seed": 4,
+  "faults": {
+    "latencyMs": 60,
+    "jitterMs": 0,
+    "dropFrame": 0,
+    "dropAck": 0,
+    "duplicate": 0
+  },
+  "events": [
+    {
+      "t": 0,
+      "kind": "connected",
+      "text": "connected",
+      "queued": 0
+    },
+    {
+      "t": 200,
+      "kind": "enqueued",
+      "text": "queued \"hey\"",
+      "clientId": "c-1-ec72",
+      "queued": 1
+    },
+    {
+      "t": 200,
+      "kind": "sent",
+      "text": "send \"hey\"",
+      "clientId": "c-1-ec72",
+      "queued": 1
+    },
+    {
+      "t": 320,
+      "kind": "ack",
+      "text": "delivered · c-1-ec72 -> s-1",
+      "clientId": "c-1-ec72",
+      "queued": 0
+    },
+    {
+      "t": 320,
+      "kind": "settled",
+      "text": "queue drained, in order",
+      "queued": 0
+    },
+    {
+      "t": 860,
+      "kind": "enqueued",
+      "text": "queued \"on my way\"",
+      "clientId": "c-2-13cf",
+      "queued": 1
+    },
+    {
+      "t": 860,
+      "kind": "sent",
+      "text": "send \"on my way\"",
+      "clientId": "c-2-13cf",
+      "queued": 1
+    },
+    {
+      "t": 900,
+      "kind": "disconnected",
+      "text": "CONNECTION LOST",
+      "queued": 1
+    },
+    {
+      "t": 920,
+      "kind": "send-failed",
+      "text": "connection lost",
+      "clientId": "c-2-13cf",
+      "queued": 1
+    },
+    {
+      "t": 920,
+      "kind": "retry-scheduled",
+      "text": "retry in 0.7s",
+      "queued": 1
+    },
+    {
+      "t": 1500,
+      "kind": "enqueued",
+      "text": "queued \"2 min out\"",
+      "clientId": "c-3-bb84",
+      "queued": 2
+    },
+    {
+      "t": 1605,
+      "kind": "sent",
+      "text": "resend \"on my way\" (attempt 2)",
+      "clientId": "c-2-13cf",
+      "queued": 2
+    },
+    {
+      "t": 1605,
+      "kind": "send-failed",
+      "text": "offline",
+      "clientId": "c-2-13cf",
+      "queued": 2
+    },
+    {
+      "t": 1605,
+      "kind": "retry-scheduled",
+      "text": "retry in 1.9s",
+      "queued": 2
+    },
+    {
+      "t": 3481,
+      "kind": "sent",
+      "text": "resend \"on my way\" (attempt 3)",
+      "clientId": "c-2-13cf",
+      "queued": 2
+    },
+    {
+      "t": 3481,
+      "kind": "send-failed",
+      "text": "offline",
+      "clientId": "c-2-13cf",
+      "queued": 2
+    },
+    {
+      "t": 3481,
+      "kind": "retry-scheduled",
+      "text": "retry in 3.1s",
+      "queued": 2
+    },
+    {
+      "t": 6539,
+      "kind": "sent",
+      "text": "resend \"on my way\" (attempt 4)",
+      "clientId": "c-2-13cf",
+      "queued": 2
+    },
+    {
+      "t": 6539,
+      "kind": "send-failed",
+      "text": "offline",
+      "clientId": "c-2-13cf",
+      "queued": 2
+    },
+    {
+      "t": 6539,
+      "kind": "retry-scheduled",
+      "text": "retry in 7.0s",
+      "queued": 2
+    },
+    {
+      "t": 8000,
+      "kind": "connected",
+      "text": "reconnected",
+      "queued": 2
+    },
+    {
+      "t": 8000,
+      "kind": "flushing",
+      "text": "flushing 2 queued",
+      "queued": 2
+    },
+    {
+      "t": 8000,
+      "kind": "sent",
+      "text": "send \"on my way\"",
+      "clientId": "c-2-13cf",
+      "queued": 2
+    },
+    {
+      "t": 8120,
+      "kind": "ack",
+      "text": "delivered · c-2-13cf -> s-2",
+      "clientId": "c-2-13cf",
+      "queued": 1
+    },
+    {
+      "t": 8120,
+      "kind": "sent",
+      "text": "send \"2 min out\"",
+      "clientId": "c-3-bb84",
+      "queued": 1
+    },
+    {
+      "t": 8240,
+      "kind": "ack",
+      "text": "delivered · c-3-bb84 -> s-3",
+      "clientId": "c-3-bb84",
+      "queued": 0
+    },
+    {
+      "t": 8240,
+      "kind": "settled",
+      "text": "queue drained, in order",
+      "queued": 0
+    }
+  ],
+  "messages": [
+    {
+      "clientId": "c-1-ec72",
+      "body": "hey",
+      "enqueuedAt": 200,
+      "deliveredAt": 320,
+      "attempts": 1,
+      "serverId": "s-1"
+    },
+    {
+      "clientId": "c-2-13cf",
+      "body": "on my way",
+      "enqueuedAt": 860,
+      "deliveredAt": 8120,
+      "attempts": 1,
+      "serverId": "s-2"
+    },
+    {
+      "clientId": "c-3-bb84",
+      "body": "2 min out",
+      "enqueuedAt": 1500,
+      "deliveredAt": 8240,
+      "attempts": 1,
+      "serverId": "s-3"
+    }
+  ],
+  "summary": {
+    "sent": 3,
+    "delivered": 3,
+    "lost": 0,
+    "duplicates": 0,
+    "ordered": true,
+    "durationMs": 8240,
+    "sweep": {
+      "total": 200,
+      "passed": 200,
+      "messages": 914
+    }
+  }
+}
