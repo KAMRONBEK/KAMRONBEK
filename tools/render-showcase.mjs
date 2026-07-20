@@ -130,6 +130,15 @@ function render(p) {
   <title>Kamronbek Juraev — React Native / Expo engineer</title>
   <defs>
     <clipPath id="screen"><rect x="${SX}" y="${SY}" width="${SW}" height="${SH}" rx="20"/></clipPath>
+    <!-- A flat-filled circle reads as a smudge, not a touch. The falloff is what
+         makes it look like a ripple, and the clip keeps it inside the row it
+         belongs to instead of bleeding over the neighbours. -->
+    <radialGradient id="rippleFill">
+      <stop offset="0%" stop-color="${p.accent}" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="${p.accent}" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="${p.accent}" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="tapRow"><rect x="${SX + 12}" y="${SY + 132}" width="${SW - 24}" height="46" rx="12"/></clipPath>
   </defs>
   <style>
     text { font-family: ${SANS}; }
@@ -139,11 +148,11 @@ function render(p) {
     .role    { font-size: 17px; fill: ${p.accent}; font-weight: 600; }
     .blurb   { font-size: 15px; fill: ${p.muted}; }
     .rowName { font-size: 14px; font-weight: 600; fill: ${p.fg}; }
-    .rowSub  { font-size: 11px; fill: ${p.muted}; }
+    .rowSub  { font-size: 12px; fill: ${p.muted}; }
     .dTitle  { font-size: 17px; font-weight: 700; fill: ${p.fg}; }
     .backLink{ font-size: 13px; fill: ${p.accent}; font-weight: 600; }
     .cta     { font-size: 13px; font-weight: 700; fill: ${p.bg}; }
-    .chipText{ font-size: 12px; fill: ${p.muted}; font-family: ${FONT}; }
+    .chipText{ font-size: 13px; fill: ${p.muted}; font-family: ${FONT}; }
     .hdr     { font-size: 16px; font-weight: 700; fill: ${p.fg}; }
 
     /* One duration for everything, so nothing can drift out of sync. */
@@ -196,10 +205,10 @@ function render(p) {
     /* a tap on the second row, just before the push */
     .ripple { animation-name: ripple; transform-origin: ${SX + SW / 2}px ${SY + 155}px; }
     @keyframes ripple {
-      0%, 45%  { opacity: 0; transform: scale(.2); }
-      47%      { opacity: .55; transform: scale(.2); }
-      53%      { opacity: 0; transform: scale(1.9); }
-      100%     { opacity: 0; transform: scale(1.9); }
+      0%, 45%  { opacity: 0; transform: scale(.15); }
+      46.5%    { opacity: .40; transform: scale(.35); }
+      51%      { opacity: 0; transform: scale(1.5); }
+      100%     { opacity: 0; transform: scale(1.5); }
     }
 
     /* detail slides in from the right, iOS push style */
@@ -227,12 +236,12 @@ function render(p) {
 
     .chip { animation: chipIn .6s cubic-bezier(.34,1.56,.64,1) backwards; }
     @keyframes chipIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-    .c0 { animation-delay: .5s; } .c1 { animation-delay: .6s; }
-    .c2 { animation-delay: .7s; } .c3 { animation-delay: .8s; }
+    .c0 { animation-delay: .25s; } .c1 { animation-delay: .3s; }
+    .c2 { animation-delay: .35s; } .c3 { animation-delay: .4s; }
 
     .intro { animation: introIn .7s cubic-bezier(.22,.61,.36,1) backwards; }
     @keyframes introIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
-    .i1 { animation-delay: .05s; } .i2 { animation-delay: .18s; } .i3 { animation-delay: .3s; }
+    .i1 { animation-delay: .05s; } .i2 { animation-delay: .12s; } .i3 { animation-delay: .2s; }
 
     /* Motion is the whole point here, but it must not be the only way in:
        with motion reduced the phone settles on the loaded list. */
@@ -255,13 +264,12 @@ function render(p) {
       <text x="${SX + 20}" y="${SY + 52}" class="hdr">Shipped</text>
       ${skeletons}
       ${rows}
-      <circle class="ripple" cx="${SX + SW / 2}" cy="${SY + 155}" r="52" fill="${p.accent}"/>
+      <g clip-path="url(#tapRow)"><circle class="ripple" cx="${SX + SW / 2}" cy="${SY + 155}" r="52" fill="url(#rippleFill)"/></g>
     </g>
     ${detail}
     <g class="splash">
       <rect x="${SX + SW / 2 - 34}" y="${SY + SH / 2 - 46}" width="68" height="68" rx="19" fill="${p.accent}"/>
       <text x="${SX + SW / 2}" y="${SY + SH / 2 - 2}" text-anchor="middle" font-size="34" font-weight="700" fill="${p.bg}">K</text>
-      <text x="${SX + SW / 2}" y="${SY + SH / 2 + 48}" text-anchor="middle" class="rowSub">loading...</text>
     </g>
   </g>
 
