@@ -1,6 +1,10 @@
-<img src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/main/assets/hero.svg" alt="Kamronbek Juraev — React Native / Expo engineer, Tashkent" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/main/assets/showcase-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/main/assets/showcase-light.svg" />
+  <img alt="Kamronbek Juraev — React Native / Expo engineer, Tashkent. An animated phone cold-starting an app and loading shipped apps: Netevia, WorkAxle, Swish, DriveMe." src="https://raw.githubusercontent.com/KAMRONBEK/KAMRONBEK/main/assets/showcase-dark.svg" width="100%" />
+</picture>
 
-**React Native / Expo engineer, 6+ years.** I build and ship production mobile apps end-to-end — architecture through store release.
+**React Native / Expo engineer, 7 years.** I build and ship production mobile apps end-to-end — architecture through store release.
 
 Mobile engineer at **Lincoln Labs, Inc.** · Tashkent, UTC+5 — a full working day of overlap with Europe, mornings with US East.
 
